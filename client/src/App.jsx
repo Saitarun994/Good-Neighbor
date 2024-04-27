@@ -21,7 +21,6 @@ function App() {
       <div className="bg-white p-4 shadow-md flex justify-between items-center">
         <ProfileDropdown options={options} />
         <h1 className="text-black font-extrabold text-3xl ml-2">GOOD NEIGHBOR</h1>
-        <ChatBot/>
       </div>
 
       {/*The page router for our webapp*/}
@@ -32,6 +31,11 @@ function App() {
           <Route path="/post/:id" element={<Post/>}/>
         </Routes>
       </main>
+
+    <div className="chatbotCont">
+        <ChatBot />
+    </div>
+
     </BrowserRouter>
   )
 }
