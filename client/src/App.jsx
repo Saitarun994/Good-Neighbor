@@ -19,8 +19,14 @@ function App() {
     <BrowserRouter>
       {/*Header*/}
       <div className="bg-white p-4 shadow-md flex justify-between items-center">
-        <ProfileDropdown options={options} />
-        <h1 className="text-black font-extrabold text-3xl ml-2">GOOD NEIGHBOR</h1>
+        <div className="flex items-center">
+          <ProfileDropdown options={options} />
+          <h1 className="text-black font-extrabold ml-2 title">GOOD NEIGHBOR</h1>
+        </div>
+        <div className="flex items-center">
+          <div className="hotButton"> Feed </div>
+          <div className="hotButton"> Map </div>
+        </div>
       </div>
 
       {/*The page router for our webapp*/}

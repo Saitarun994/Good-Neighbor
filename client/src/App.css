@@ -3,3 +3,26 @@
     bottom: 1vh;
     right: 1vw;
 }
+
+.hotButton {
+    background-color: #4299e1;
+    border-radius: 2.5vh;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.title {
+    font-size: 1.875rem;
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 1.4rem;
+    }
+}
