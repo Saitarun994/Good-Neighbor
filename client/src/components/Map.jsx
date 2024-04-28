@@ -45,15 +45,31 @@ export class MapContainer extends Component {
       >
         <Marker
           onClick={this.onMarkerClick}
-          name={'UC Davis'}
+          name={'Lost Wallet'}
+          description={"Has anyone seen my wallet? Last seen at the ARC men's bathroom. Thank you"}
+          position={{ lat: 38.5428366593408, lng: -121.74967389178279 }}
+        />
+        <Marker
+          onClick={this.onMarkerClick}
+          name={'Lost Dog'}
+          description={"My dog ran out of the house and got lost. Please report sighting if you see him. Thank you Good Neighbor!"}
+          position={{ lat: 38.550208066830656, lng: -121.768789526105 }}
+        />
+        <Marker
+          onClick={this.onMarkerClick}
+          name={'Found Iphone'}
+          description={"I found an iPhone laying in arroyo field. Hope the owner sees this!"}
+          position={{ lat: 38.5548439169783, lng: -121.77285587083493 }}
         />
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showingInfoWindow}
           onClose={this.onClose}
         >
-          <div>
-            <h4>{this.state.selectedPlace.name}</h4>
+          <div style={{ backgroundColor: 'white', padding: '10px' }}>
+            <h4 style={{fontSize: '30px'}}>{this.state.selectedPlace.name}</h4>
+            <p style={{fontSize: '15px'}}>{this.state.selectedPlace.description}</p>
+            <img src='' alt='Image' style={{width: '200px'}}></img>
           </div>
         </InfoWindow>
       </Map>
