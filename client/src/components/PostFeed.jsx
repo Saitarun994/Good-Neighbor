@@ -6,6 +6,38 @@ function PostFeed() {
     <div className=" my-4 flex flex-col justify-center gap-4">
 
       <div className="postBlock">
+        <img src="arduino-found.webp" className="postImg" />
+        <div>
+          <div className="flex items-center">
+            <img src="/pfp.jpeg" className="postPFP"/>
+            <div className="postUser"> Kina Lee </div>
+            <div className="postTag" style={{backgroundColor: "rgb(0, 153, 76, 0.6)"}}> Found </div>
+          </div>
+          <h3 className="postTitle"> Found this Arduino Uno </h3>
+          <div className="postContent"> Contact me, I used it for Hackdavis'24, I'll promise to give it back lols </div>
+          <div className="flex">
+          </div>
+        </div>
+      </div>
+
+
+      <div className="postBlock">
+        <img src="arduino.jpg" className="postImg" />
+        <div>
+          <div className="flex items-center">
+            <img src="/pfp.jpeg" className="postPFP"/>
+            <div className="postUser"> Gregory Paul </div>
+            <div className="postTag"> Lost </div>
+          </div>
+          <h3 className="postTitle">I lost my Arduino Uno</h3>
+          <div className="postContent"> I'm the only one with an Uno at Hackdavis'24, someone help me find it please? </div>
+          <div className="flex">
+          <div className="postFound"> Report Sighting </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="postBlock">
         <img src="wallet.jpeg" className="postImg" />
         <div>
           <div className="flex items-center">
