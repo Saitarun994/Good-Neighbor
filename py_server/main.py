@@ -33,16 +33,16 @@ def image_recognition():
     
     # Return the result as JSON
     return jsonify({
-        'labels1': labels1,
-        'labels2': labels2,
-        'labels3': labels3,
-        'labels4': labels4,
-        'labels5': labels5,
-        'labels6': labels6,
-        'labels7': labels7,
-        'labels8': labels8,
-        'labels9': labels9,
-        'labels10': labels10
+        'Kina Lee': labels1,
+        'Gregory Paul': labels2,
+        'Harry Potter': labels3,
+        'Steve Jobs': labels4,
+        'Sai Tarun': labels5,
+        'Beth Harmon': labels6,
+        'Jacob Johns': labels7,
+        'Jason Tatum': labels8,
+        'Angelina Swanson': labels9,
+        'Joe Jenkins': labels10
     })
     
     
