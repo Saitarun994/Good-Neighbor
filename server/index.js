@@ -3,7 +3,7 @@ import * as dotenv from "dotenv";
 import cors from "cors";
 import connectDB from "./mongodb/connect.js";
 import PostSchema from "./mongodb/models/post.js";
-
+import UploadSchema from "./mongodb/models/upload.js";
 
 dotenv.config(); 
 
@@ -29,10 +29,10 @@ const startServer = async () => {
     }
   };
 
-//api route to get data from mongo and send to frontend
+//api route to get all posts from mongo and send to frontend
 app.get("/", (req,res)=>{
-    PostSchema.find({}) //mongodb cmd
-    .then(users=> res.json(users))
+    UploadSchema.find({}) //mongodb cmd
+    .then(posts=> res.json(posts))
     .catch(err=> res.json(err))
 })
 
@@ -74,6 +74,14 @@ app.post("/createUser",(req,res)=>{
     .catch(err => res.json(err))
 
     console.log("created new user:",req.body)
+})
+
+//backend post route to get new post from front end
+app.post("/createPost",(req,res)=>{
+    UploadSchema.create(req.body) //mongodb cmd
+    .then(users=> res.json(users))
+    .catch(err => res.json(err))
+    console.log("created new post:",req.body)
 })
 
 app.listen(port, () => {

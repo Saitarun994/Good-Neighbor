@@ -22,32 +22,35 @@ function App() {
   return (
     <BrowserRouter>
       {/*Header*/}
-      <div className="bg-white p-4 shadow-md flex justify-between items-center fixed left-0 right-0">
-        <div className="flex items-center">
-          <ProfileDropdown/>
-          <h1 className="text-black font-extrabold ml-2 title">
-            <Link to="/">
-              GOOD NEIGHBOR
+      <div className="z-50 bg-white p-4 shadow-md flex justify-center items-center fixed w-full">
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center">
+            <h1 className="text-black font-black text-4xl ml-2 title">
+              <Link to="/">
+                GOOD NEIGHBOR
+              </Link>
+            </h1>
+          </div>
+          <div className="flex items-center"> 
+            <ProfileDropdown/>
+            <Link to="/post" className="hotButton">
+              Post
             </Link>
-          </h1>
-        </div>
-        <div className="flex items-center"> 
-          <Link to="/post" className="hotButton">
-            Post
-          </Link>
-          <Link to="/" className="hotButton">
-            Feed 
-          </Link>
-          <Link to="/map" className="hotButton">
-            Map
-          </Link>
+            <Link to="/feed" className="hotButton">
+              Lost & Found 
+            </Link>
+            <Link to="/map" className="hotButton">
+              Map
+            </Link>
+          </div>
         </div>
       </div>
 
       {/*The page router for our webapp*/}
       <main class="main">
         <Routes>
-          <Route path="/" element={<Feed/>}/>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/feed" element={<Feed/>}/>
           <Route path="/post" element={<Post />} />
           <Route path="/map" element={<Map />} />
           <Route path="/profile/:id" element={<Profile/>}/>

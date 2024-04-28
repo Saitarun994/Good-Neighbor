@@ -30,19 +30,14 @@ const ProfileDropDown = withAuthInfo((props) =>
     const [isFirstLogin, setIsFirstLogin] = useState(true);
 
     if (props.isLoggedIn) {
-      console.log(props.user);
-
       useEffect(() => {
         if (props.user.firstName) {
           setName(props.user.firstName);
           setEmail(props.user.email);
           const score = 0;
-          
-
           // Send new user data to the backend
           axios.post("http://localhost:8080/createUser", { name, email, score })
             .then(result => {
-              console.log(result);
               setIsFirstLogin(false); // Marking the first login as completed
             })
             .catch(err => {
