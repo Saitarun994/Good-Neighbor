@@ -21,8 +21,21 @@
     font-size: 1.875rem;
 }
 
+.main {
+    padding-top: 20vh;
+}
+
 @media (max-width: 800px) {
     .title {
         font-size: 1.4rem;
     }
+    .main {
+        padding-top: 18vh;
+    }
+}
+
+.pTitle {
+    margin-top: 1.5vh;
+    font-weight: bold;
+    font-size: 6vh;
 }
