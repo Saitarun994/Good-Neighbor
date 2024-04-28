@@ -1,0 +1,10 @@
+.button {
+    display: flex;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+
+    margin-bottom: .8vh;
+    margin-right: .5vw;
+} 

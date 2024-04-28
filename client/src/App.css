@@ -1,0 +1,43 @@
+.chatbotCont {
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+}
+
+.hotButton {
+    color: white;
+    background-color: #4299e1;
+    border-radius: 2.5vh;
+    font-weight: bold;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.title {
+    font-size: 1.875rem;
+}
+
+.main {
+    padding-top: 20vh;
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    .main {
+        padding-top: 18vh;
+    }
+}
+
+.pTitle {
+    margin-top: 1.5vh;
+    font-weight: bold;
+    font-size: 6vh;
+}
