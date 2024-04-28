@@ -63,6 +63,13 @@ const Post = withAuthInfo((props) => {
             ></textarea>
 
             <br/>
+            <label> Type: </label>
+            <select id="dropdown">
+              <option value="post">Post</option>
+              <option value="lost">Lost</option>
+              <option value="found">Found</option>
+            </select>
+            <br/>
             <div className="w-full h-full flex justify-center items-center border-2 border-dashed border-gray-400 rounded-lg px-4 my-2 min-w-56 min-h-48">
               <Dropzone onDrop={handleUpload} minSize={1024} maxSize={3072000}>
                     {({ getRootProps, getInputProps, isDragActive, isDragAccept, isDragReject }) => {

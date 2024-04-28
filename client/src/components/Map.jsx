@@ -121,10 +121,10 @@ export class MapContainer extends Component {
           visible={this.state.showingInfoWindow}
           onClose={this.onClose}
         >
-          <div className='popUp' style={{ backgroundColor: 'white', padding: '10px' }}>
-            <h4 style={{fontSize: '30px'}}>{this.state.selectedPlace.name}</h4>
-            <p style={{fontSize: '15px'}}>{this.state.selectedPlace.description}</p>
-            <img src={this.state.selectedPlace.image} style={{width: '200px'}} alt="Marker Image" />
+          <div className='popUp'>
+            <h4 className="locTitle">{this.state.selectedPlace.name}</h4>
+            <p className="locDesc">{this.state.selectedPlace.description}</p>
+            <img className="locImg" src={this.state.selectedPlace.image} style={{width: '200px'}} alt="Marker Image" />
           </div>
         </InfoWindow>
       </Map>
