@@ -35,7 +35,7 @@ function App() {
           <Link to="/post" className="hotButton">
             Post
           </Link>
-          <Link to="/feed" className="hotButton">
+          <Link to="/" className="hotButton">
             Feed 
           </Link>
           <Link to="/map" className="hotButton">
@@ -47,9 +47,8 @@ function App() {
       {/*The page router for our webapp*/}
       <main class="main">
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Feed/>}/>
           <Route path="/post" element={<Post />} />
-          <Route path="/feed" element={<Feed/>}/>
           <Route path="/map" element={<Map />} />
           <Route path="/profile/:id" element={<Profile/>}/>
           <Route path="/post/:id" element={<Post/>}/>
