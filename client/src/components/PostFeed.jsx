@@ -3,9 +3,9 @@ import './PostFeed.css'
 
 function PostFeed() {
   return (
-    <div className=" my-4 flex flex-col justify-center gap-4">
+    <div className="posts">
 
-      <div className="postBlock">
+      <div className="postBlock" >
         <img src="arduino-found.webp" className="postImg" />
         <div>
           <div className="flex items-center">
