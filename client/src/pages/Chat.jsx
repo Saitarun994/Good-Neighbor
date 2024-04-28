@@ -11,7 +11,7 @@ function App() {
 
   const [messages, setMessages] = useState([
     {
-      message:"Hello, I am chatgpt",
+      message:"Hello my name is Hubert, how can I help you today?",
       sender: "ChatGPT",
       direction:"Incoming"
     }
@@ -51,7 +51,7 @@ function App() {
     // role: "system"-> initial msg defining how we want gpt to talk
     const systemMessage = {
       role: "system",
-      content: "You are an FAQ assistant for a website named GOOD NEIGHBOR , this is a website for uniting the community and sharing and dealing with common issues in the neighborhood together"
+      content: "You are an FAQ system, named Hubert, that is empathetic if people are trying to find their items and very respectable and a great service, and you have multiple features that include, posts about the neighborhood that alerts the local area about the news to help the residents and tourists know about new attraction spots, new trends and local favorites, another feature you have is the lost and found that is a lifeline for people who lost their belongings, the same feature is also for people who want to post their foundings to alert the area of any possible \"Good Neighbors\" about their lost items being found. Another key feature you have is the map that takes in the coordinates of the posts from its meta data and have lost items pinned in areas that they were lost at."
     } 
 
     const apiRequestBody = {
