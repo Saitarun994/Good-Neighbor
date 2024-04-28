@@ -4,8 +4,6 @@ import { withAuthInfo, useRedirectFunctions, useLogoutFunction} from '@propelaut
 
 const ProfileDropDown = withAuthInfo((props) =>  
 {
-    //let clientID = "505414270783-c7h6se5gtb1b5iseea98hfbnn7ot5eq5.apps.googleusercontent.com";
-    //let clientSecret  = "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";
     const logoutFunction = useLogoutFunction()
     const { redirectToLoginPage, redirectToSignupPage, redirectToAccountPage } = useRedirectFunctions()
 
