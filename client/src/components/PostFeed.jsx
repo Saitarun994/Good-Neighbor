@@ -97,6 +97,22 @@ function PostFeed() {
       </div>
 
       <div className="postBlock">
+        <img src="/little-timmy.jpeg" className="postImg" />
+        <div>
+          <div className="flex items-center">
+            <img src="/pfp.jpeg" className="postPFP" />
+            <div className="postUser"> Timmy's Mom</div>
+            <div className="postTag"> Lost </div>
+          </div>
+          <h3 className="postTitle"> Lost Boy around Davis </h3>
+          <div className="postContent"> Little Timmy disappeared last night, he was last seen around Davis, please contact me! </div>
+          <div className="flex">
+            <div className="postFound"> Report Sighting </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="postBlock">
         <img src="/poodle.jpg" className="postImg" />
         <div>
           <div className="flex items-center">
