@@ -7,7 +7,7 @@ function Feed() {
     <div className="text-left">
       <div className="flex flex-col items-center justify-center text-left">
         <div className="pTitle">
-          My Feed
+          My Neighborhood
         </div>
         <PostFeed/>
       </div>

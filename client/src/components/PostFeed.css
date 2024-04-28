@@ -8,24 +8,56 @@
 
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    width: 50vw;
+    width: 30vw;
     min-height: 40vh;
 }
 
     .postTitle {
-        padding-top: 1vh;
+        padding-top: 0vh;
         font-weight: 600;
-        font-size: calc((6vh + 1vw)/2.2);
+        font-size: calc((6vh + 1vw)/3);
     }
 
-    .postImg {
-        height: calc((3vw + 7vh)/2);
-        width: calc((3vw + 7vh)/2);
-        border-radius: calc((3.5vw + 6vh)/2);
+    .postPFP {
+        height: calc((3vw + 7vh)/3);
+        width: calc((3vw + 7vh)/3);
+        border-radius: calc((3.5vw + 6vh)/3);
+        padding: 0;
+    }
+
+    .postUser {
+        padding-left: 1vw;
+        font-size: calc((6vh + 1vw)/3);
+    }
+
+    .postTag {
+        margin-left: auto;
+        font-size: 2.5vh;
+
+        background-color: rgb(255, 178, 102, 0.9);
+        padding-top: 0vh;
+        padding-bottom: .2vh;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        border-radius: 2vh;
+        border: .2vh solid black;
+
+
     }
 
     .postContent {
-        
+        font-size: 2.5vh;
+    }
+
+    .postImg {
+        align-self: center;
+        margin-left: 1vw;   
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        height: calc((5vw + 10vh)*2);
+        width: calc((5vw + 10vh)*2);
+
+        border-radius: 1vh;
     }
 
     .postFound {
@@ -33,15 +65,21 @@
         font-weight: 500;
         margin-top: auto;
         margin-left: auto;
+        font-size: 2.2vh;
 
         border-radius: 2vh;
         border: 0.3vh solid black;
-        padding: calc(.8vh + .1vw);
+        padding: calc((.8vh + .1vw)/4);
+        padding-top: 0;
     }
 
 @media (max-width: 800px) {
    .postBlock {
         width: 80vw;
-        height: 30vh;
+        min-height: 30vh;
+   }
+   .postImg {
+        height: calc((5vw + 10vh)*3);
+        width: calc((5vw + 10vh)*3);
    }
 }
