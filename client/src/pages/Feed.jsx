@@ -9,7 +9,6 @@ function Feed() {
         <div className="pTitle">
           My Feed
         </div>
-        <Map/>
         <PostFeed/>
       </div>
     </div>

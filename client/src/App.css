@@ -5,6 +5,7 @@
 }
 
 .hotButton {
+    color: white;
     background-color: #4299e1;
     border-radius: 2.5vh;
     font-weight: bold;
