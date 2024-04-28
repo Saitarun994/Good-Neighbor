@@ -23,7 +23,7 @@ function App() {
       {/*Header*/}
       <div className="bg-white p-4 shadow-md flex justify-between items-center fixed left-0 right-0">
         <div className="flex items-center">
-          <ProfileDropdown options={options} />
+          <ProfileDropdown/>
           <h1 className="text-black font-extrabold ml-2 title">
             <Link to="/">
               GOOD NEIGHBOR
