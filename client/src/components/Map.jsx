@@ -4,21 +4,32 @@ import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 const mapStyles = {
   position: 'fixed',
   width: '100vw',
-  height: '100vh'
+  height: '87vh'
 };
+
 
 export class MapContainer extends Component {
 
   componentDidMount() {
-    // Disable scrolling on the entire page
-    document.body.style.overflow = 'hidden';
+    // Scroll to a specific position only on the initial load
+    if (!sessionStorage.getItem('scrollPositionSet')) {
+      window.scrollTo(0, 90); // Adjust the scroll position as needed
+      sessionStorage.setItem('scrollPositionSet', 'true');
+    }
+  
+    // Check if the viewport width is less than or equal to 768 pixels
+    if (window.innerWidth <= 768) {
+      // Disable scrolling on mobile devices
+      document.body.style.overflow = 'hidden';
+    }
   }
+  
 
   componentWillUnmount() {
-    // Re-enable scrolling when the component is unmounted
-    document.body.style.overflow = 'auto';
+    // Clear the session storage when the component is unmounted
+    sessionStorage.removeItem('scrollPositionSet');
   }
-
+  
   state = {
     showingInfoWindow: false,  // Hides or shows the InfoWindow
     activeMarker: {},          // Shows the active marker upon click
