@@ -1,0 +1,11 @@
+.map {
+    position: fixed;
+    width: 100vw;
+    height: 87vh;
+}
+
+@media (max-width: 700px) {
+    .map {
+        margin-top: 9vh;
+    }
+}
