@@ -1,6 +1,15 @@
+.postContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .postBlock {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     align-items: center;
 
     background-color: #edf2f7;
@@ -15,4 +24,17 @@
 
 .fileUpload {
     width: 20vw;
+}
+
+.entry {
+    margin-left: auto;
+    width: 20vw;
+    margin-bottom: 2vh;
+}
+
+.submit {
+    background-color: orange;
+    font-weight: 500;
+    border-radius: 3vh;
+    padding: 1vh;
 }

@@ -25,25 +25,29 @@ const Post = withAuthInfo((props) => {
   }
 
   return (
-    <div className="my-4 flex flex-col justify-center gap-4 items-center">
+    <div className="postContainer">
 
       <div className="postBlock">
         <form onSubmit={sendForm}>
           <FileUploader className="fileUpload" handleChange={(e) => setFile(e.name)} name="file" types={fileTypes} />
-          <label> Title: </label>
-          <input 
-            type="text"
-            required
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-          />
-          <label> Description: </label>
-          <textarea
-            required
-            value={desc}
-            onChange={(e) => setDesc(e.target.value)}
-          ></textarea>
-          <button type="submit"> Submit </button>
+          <div className="flex" style={{marginTop: "2vh"}}>
+            <label style={{marginBottom: "2vh"}}> Title: </label>
+            <input className="entry"
+              type="text"
+              required
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col">
+            <label> Description: </label>
+            <textarea className="entry" style={{height: "15vh"}}
+              required
+              value={desc}
+              onChange={(e) => setDesc(e.target.value)}
+            ></textarea>
+          </div>
+          <button type="submit" className="submit"> Submit </button>
         </form>
       </div>
 
