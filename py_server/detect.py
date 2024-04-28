@@ -1,5 +1,5 @@
 import os
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "C:\\Users\\PC\\OneDrive\\Desktop\\Code\\Hack Davis\\Good-Neighbor-1\\python\\api_key.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "../api_key.json"
 
 """
 Functions that are going to be detecting images
