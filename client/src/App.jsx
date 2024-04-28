@@ -8,6 +8,7 @@ import ProfileDropdown from './components/ProfileDropDown'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
 import Feed from './pages/Feed'
+import Map from './components/Map.jsx'
 import Post from './pages/Post'
 import Profile from './pages/Profile'
 import ChatBot from './components/ChatBot'
@@ -45,6 +46,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/feed" element={<Feed/>}/>
+          <Route path="/map" element={<Map />} />
           <Route path="/profile/:id" element={<Profile/>}/>
           <Route path="/post/:id" element={<Post/>}/>
         </Routes>
