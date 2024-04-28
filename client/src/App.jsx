@@ -32,6 +32,9 @@ function App() {
           </h1>
         </div>
         <div className="flex items-center"> 
+          <Link to="/post" className="hotButton">
+            Post
+          </Link>
           <Link to="/feed" className="hotButton">
             Feed 
           </Link>
@@ -45,6 +48,7 @@ function App() {
       <main class="main">
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/post" element={<Post />} />
           <Route path="/feed" element={<Feed/>}/>
           <Route path="/map" element={<Map />} />
           <Route path="/profile/:id" element={<Profile/>}/>
