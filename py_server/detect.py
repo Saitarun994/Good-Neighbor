@@ -1,5 +1,5 @@
 import os
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "../api_key.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "api_key.json"
 
 """
 Functions that are going to be detecting images
@@ -50,3 +50,4 @@ def detect_logos(image_file_path):
     logo_info = [logo.description for logo in logos]
 
     return logo_info[:5]
+
