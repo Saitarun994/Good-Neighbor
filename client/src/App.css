@@ -17,6 +17,13 @@
 
     margin-left: 1vw;
     margin-right: 1vw;
+
+    will-change: filter;
+    transition: filter 300ms;
+}
+
+.hotButton:hover{
+    filter: drop-shadow(0 0 2em #4299e1);
 }
 
 .title {
@@ -41,3 +48,4 @@
     font-weight: bold;
     font-size: 6vh;
 }
+

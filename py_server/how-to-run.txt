@@ -1,0 +1,16 @@
+1. Make sure, you're on the ./py_server directory
+2. Set up the virtual env $ venv/Scripts/activate
+3. Run pip install -r requirements.txt
+4. run Python main.py and connect to http://127.0.0.1:8080/api/detect
+
+Have packages installed, 
+    python -m pip install google-cloud-vision 
+    python -m pip install Flask
+
+Use Case:
+
+Have main.py running in background for image recognition to match two posts with the same labels
+
+I've included some pictures in py_server\image-test that should have a normal and a -found tag, they have the same labels
+
+

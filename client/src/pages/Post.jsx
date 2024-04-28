@@ -36,6 +36,7 @@ const Post = withAuthInfo((props) => {
     })
     .catch(err => console.log(err))
   }
+
   if (props.isLoggedIn){
     return(
       <div className="my-4 flex flex-col justify-center gap-4 items-center">
@@ -49,14 +50,18 @@ const Post = withAuthInfo((props) => {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
             />
+
             <br/>
             <label> Description: </label>
             <br/>
             <textarea
+
+
               required
               value={desc}
               onChange={(e) => setDesc(e.target.value)}
             ></textarea>
+
             <br/>
             <div className="w-full h-full flex justify-center items-center border-2 border-dashed border-gray-400 rounded-lg px-4 my-2 min-w-56 min-h-48">
               <Dropzone onDrop={handleUpload} minSize={1024} maxSize={3072000}>
@@ -89,6 +94,7 @@ const Post = withAuthInfo((props) => {
             </button>
           </form>
         </div>
+
       </div>
       );
 

@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
-const mapStyles = {
-  width: '100%',
-  height: '100%'
-};
+import './Map.css'
 
 export class MapContainer extends Component {
 
+  componentDidMount() {
+    // Scroll to a specific position only on the initial load
+    if (!sessionStorage.getItem('scrollPositionSet')) {
+      window.scrollTo(0, 90); // Adjust the scroll position as needed
+      sessionStorage.setItem('scrollPositionSet', 'true');
+    }
+  
+    // Check if the viewport width is less than or equal to 768 pixels
+    if (window.innerWidth <= 768) {
+      // Disable scrolling on mobile devices
+      document.body.style.overflow = 'hidden';
+    }
+  }
+  
+
+  componentWillUnmount() {
+    // Clear the session storage when the component is unmounted
+    sessionStorage.removeItem('scrollPositionSet');
+  }
+  
   state = {
     showingInfoWindow: false,  // Hides or shows the InfoWindow
     activeMarker: {},          // Shows the active marker upon click
@@ -35,7 +52,7 @@ export class MapContainer extends Component {
       <Map
         google={this.props.google}
         zoom={14}
-        style={mapStyles}
+        className="map"
         initialCenter={
           {
             lat: 38.54156571321539,
