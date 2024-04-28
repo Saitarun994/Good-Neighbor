@@ -5,7 +5,7 @@ function PostFeed() {
   return (
     <div className="posts">
 
-      <div className="postBlock" >
+      <div className="postBlock">
         <img src="arduino-found.webp" className="postImg" />
         <div>
           <div className="flex items-center">

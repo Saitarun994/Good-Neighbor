@@ -39,7 +39,7 @@ const Post = withAuthInfo((props) => {
 
   if (props.isLoggedIn){
     return(
-      <div className="my-4 flex flex-col justify-center gap-4 items-center">
+      <div className="flex flex-col justify-center gap-4 items-center postPage">
         <div className="bg-blue-100 p-5 rounded-lg">
           <form onSubmit={sendForm}>
             <br/>
@@ -102,7 +102,7 @@ const Post = withAuthInfo((props) => {
   else
   {
     return (
-      <div className="flex justify-center items-center h-56">
+      <div className="flex justify-center items-center h-56 postPage">
       <div className="bg-white p-8 rounded-lg shadow-lg">
         <p className="text-center font-bold">PLEASE LOGIN TO POST</p>
       </div>

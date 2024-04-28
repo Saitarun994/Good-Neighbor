@@ -49,3 +49,17 @@
     font-size: 6vh;
 }
 
+@media (max-width: 1000px) {
+    .homePageCss {
+        margin-top: 8vh;
+    }
+    .feedPage {
+        margin-top: 3vh;
+    }
+    .homePage {
+        margin-top: 10vh;
+    }
+    .postPage {
+        margin-top: 10vh;
+    }
+}

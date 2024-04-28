@@ -4,7 +4,7 @@ import PostFeed from '../components/PostFeed'
 
 function Feed() {
   return (
-    <div className="text-left">
+    <div className="text-left feedPage">
       <div className="flex flex-col items-center justify-center text-left">
         <div className="pTitle">
           My Neighborhood
