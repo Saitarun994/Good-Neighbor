@@ -2,11 +2,22 @@ import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, InfoWindow, Marker } from 'google-maps-react';
 
 const mapStyles = {
-  width: '100%',
-  height: '100%'
+  position: 'fixed',
+  width: '100vw',
+  height: '87vh'
 };
 
 export class MapContainer extends Component {
+
+  componentDidMount() {
+    // Disable scrolling on the entire page
+    document.body.style.overflow = 'hidden';
+  }
+
+  componentWillUnmount() {
+    // Re-enable scrolling when the component is unmounted
+    document.body.style.overflow = 'auto';
+  }
 
   state = {
     showingInfoWindow: false,  // Hides or shows the InfoWindow
