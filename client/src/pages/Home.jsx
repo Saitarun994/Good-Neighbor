@@ -17,7 +17,7 @@ function Home() {
     },[])
 
     return (
-    <div className='max-w-8xl mx-auto'>
+    <div className='max-w-8xl mx-auto homePageCss'>
         <div className="flex flex-col items-center justify-center">
             <h1 className='font-extrabold text-[#222328] text-[32px]'>
                 Neighborhood Report

@@ -49,3 +49,25 @@
     font-size: 6vh;
 }
 
+.chatPage {
+    height: 80vh !important;
+}
+
+@media (max-width: 1000px) {
+    .homePageCss {
+        margin-top: 8vh;
+    }
+    .feedPage {
+        margin-top: 3vh;
+    }
+    .homePage {
+        margin-top: 10vh;
+    }
+    .postPage {
+        margin-top: 10vh;
+    }
+    .chatPage {
+        margin-top: 6vh;
+        height: 74.5vh !important;
+    }
+}

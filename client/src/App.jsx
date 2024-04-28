@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -12,6 +11,7 @@ import Map from './components/Map.jsx'
 import Post from './pages/Post'
 import Profile from './pages/Profile'
 import ChatBot from './components/ChatBot'
+import Chat from './pages/Chat.jsx'
 
 function App() {
 
@@ -53,8 +53,10 @@ function App() {
           <Route path="/feed" element={<Feed/>}/>
           <Route path="/post" element={<Post />} />
           <Route path="/map" element={<Map />} />
+          <Route path="/chat" element={<Chat />} />
           <Route path="/profile/:id" element={<Profile/>}/>
           <Route path="/post/:id" element={<Post/>}/>
+
         </Routes>
       </main>
 
