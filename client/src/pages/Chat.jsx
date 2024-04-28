@@ -91,7 +91,7 @@ function App() {
   return (
     <div>
       <div>
-        <MainContainer>
+        <MainContainer className="chatPage">
           <ChatContainer>
             <MessageList
               typingIndicator={typing ? <TypingIndicator content="ChatGPT is typing"/> : null }
