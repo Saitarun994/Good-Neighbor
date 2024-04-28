@@ -1,0 +1,47 @@
+.postBlock {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #edf2f7;
+
+    padding: calc((1.5vw + 2vh)/2.5);
+
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 50vw;
+    min-height: 40vh;
+}
+
+    .postTitle {
+        padding-top: 1vh;
+        font-weight: 600;
+        font-size: calc((6vh + 1vw)/2.2);
+    }
+
+    .postImg {
+        height: calc((3vw + 7vh)/2);
+        width: calc((3vw + 7vh)/2);
+        border-radius: calc((3.5vw + 6vh)/2);
+    }
+
+    .postContent {
+        
+    }
+
+    .postFound {
+        cursor: pointer;
+        font-weight: 500;
+        margin-top: auto;
+        margin-left: auto;
+
+        border-radius: 2vh;
+        border: 0.3vh solid black;
+        padding: calc(.8vh + .1vw);
+    }
+
+@media (max-width: 800px) {
+   .postBlock {
+        width: 80vw;
+        height: 30vh;
+   }
+}
