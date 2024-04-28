@@ -7,6 +7,7 @@
 .hotButton {
     background-color: #4299e1;
     border-radius: 2.5vh;
+    font-weight: bold;
 
     padding-left: 4vw;
     padding-right: 4vw;

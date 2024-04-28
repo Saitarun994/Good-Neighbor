@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -22,11 +24,19 @@ function App() {
       <div className="bg-white p-4 shadow-md flex justify-between items-center fixed left-0 right-0">
         <div className="flex items-center">
           <ProfileDropdown options={options} />
-          <h1 className="text-black font-extrabold ml-2 title">GOOD NEIGHBOR</h1>
+          <h1 className="text-black font-extrabold ml-2 title">
+            <Link to="/">
+              GOOD NEIGHBOR
+            </Link>
+          </h1>
         </div>
-        <div className="flex items-center">
-          <div className="hotButton"> Feed </div>
-          <div className="hotButton"> Map </div>
+        <div className="flex items-center"> 
+          <Link to="/feed" className="hotButton">
+            Feed 
+          </Link>
+          <Link to="/map" className="hotButton">
+            Map
+          </Link>
         </div>
       </div>
 
