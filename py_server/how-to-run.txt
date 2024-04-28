@@ -1,9 +1,11 @@
 1. Make sure, you're on the ./py_server directory
 2. Set up the virtual env $ venv/Scripts/activate
-3. Have packages installed, 
+3. Run pip install -r requirements.txt
+4. run Python main.py and connect to http://127.0.0.1:8080/api/detect
+
+Have packages installed, 
     python -m pip install google-cloud-vision 
     python -m pip install Flask
-4. run Python main.py and connect to http://127.0.0.1:8080/api/detect
 
 Use Case:
 
