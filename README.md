@@ -13,33 +13,33 @@ Most people are unable to help their community due to a lack of awarness, They d
 - Fine Tuned ChatGPT AI assistant to help new users figure things out
 
 ## How we built it 🔨
-A Fullstack app powered by the Mern Stack
+A Fullstack app powered by the Mern Stack\
 
 ![preview](https://i.imgur.com/6pDhQbp.png)
 
-PropelAuth Login
+PropelAuth Login\
 
 ![preview](https://i.imgur.com/yaknGy3.png)
 
 
-Google Maps Api for interative Map
+Google Maps Api for interative Map\
 
 ![preview](https://i.imgur.com/UuIDGl4.png)
 
-Lost and found page
+Lost and found page\
 ![preview](https://i.imgur.com/KCICJJj.png)
 
-Mongodb to store userdata and Posts
+Mongodb to store userdata and Posts\
 
 ![preview](https://i.imgur.com/YhBQccW.png)
 
-GPT 3.5 turbo for AI assistant
+GPT 3.5 turbo for AI assistant\
 ![preview](https://i.imgur.com/Z43tHQt.png)
 
-Easily add new posts
+Easily add new posts\
 ![preview](https://i.imgur.com/pQaKwrL.png)
 
-Updated Neighborhood report
+Updated Neighborhood report\
 
 ![preview](https://i.imgur.com/8hBL9QY.png)
 
