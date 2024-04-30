@@ -6,7 +6,7 @@ import { MainContainer, ChatContainer, MessageList, Message, MessageInput , Typi
 
 function App() {
 
-  const API_KEY = "sk-proj-rZ4F7JzpAQn8lb2bw5qIT3BlbkFJPQUdUBDdmc6gzhsyZgQ4"
+  const API_KEY = "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"
   const [typing , setTyping] = useState(false)
 
   const [messages, setMessages] = useState([
